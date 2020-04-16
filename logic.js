@@ -6,7 +6,7 @@ var time;
 var count;
 var measureTime;
 var jsTimer;
-var lightColor = "images/broken.png";
+var brokenEgg = "images/broken.png";
 var darkColor = "images/egg.jpg";
 
 function resizeBoard(p) {
@@ -50,7 +50,7 @@ function nextMove(i, j) {
 function changeColor(i, j) {
     var img = document.getElementById("img" + i + j);
     if (box[i][j] == "1") {
-        img.setAttribute("src", lightColor);
+        img.setAttribute("src", brokenEgg);
         box[i][j] = 0;
     } else {
         img.setAttribute("src", darkColor);
@@ -79,7 +79,7 @@ function prepareTable() {
             if (box[i][j] == 1) {
                 img.setAttribute("src", darkColor);
             } else {
-                img.setAttribute("src", lightColor);
+                img.setAttribute("src", brokenEgg);
             }
             img.setAttribute("width", width);
             img.setAttribute("height", height);
@@ -91,11 +91,11 @@ function prepareTable() {
     }
     count = -1;
     countMovements();
-    // measureTime = 1;
-    // time = -1;
-    // startTimer();
-    // window.clearInterval(jsTimer);
-    // jsTimer = self.setInterval(startTimer, 1000);
+    measureTime = 1;
+    time = -1;
+    startTimer();
+    window.clearInterval(jsTimer);
+    jsTimer = self.setInterval(startTimer, 1000);
 }
 function startTimer() {
     if (measureTime == 1) {
@@ -111,13 +111,10 @@ function applause() {
     var audio = new Audio();
 
     if (audio.canPlayType("audio/mp3")) {
-        audio.src = "/games/html5/applause.mp3";
+        audio.src = "audio/applause.mp3";
         //audio.src = "applause.mp3";
     }
-    else if (audio.canPlayType("audio/wav")) {
-        audio.src = "/games/html5/applause.wav";
-        //audio.src = "applause.wav";
-    }
+
     //        else if (audio.canPlayType("audio/ogg")) {
     //            audio.src = "applause.mp3";
     //        }
