@@ -1,59 +1,264 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>WitBrew | Crafting Coherence</title>
-<meta name="author" content="Rohit R Nath" />
-<meta charset="UTF-8" />
-<link rel="Stylesheet" type="text/css" href="style.css" />
-<script src="logic.js"></script>
+	<meta charset="utf-8" />
+	<title>Rohit R NATH</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!--Custom fonts. To improve load times, remove this and update the h1 styling in style.css--> 
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+	<!-- just in case viewer is using Internet Explorer -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
 </head>
- <style type = "text/css">
-  body {
-  background-image: url("images/BG.png");
-  }
-  p {
-  background-color: black;
-  background-color: rgba(255, 255, 255, .85);
-  }
- </style>
 
-<body onload="resizeBoard(5);">
-<section>
-<h1>Ekalavya and the Turtle Eggs</h1>
-<p>
-<b>story</b>: A small boy called Ekalavya lived by the lake side.  On his birthday, his grandfather gave him 25 turtle eggs as gift and tells him to take care of them, until they hatch.<br />
-Ekalavya placed all the 25 eggs in an egg tray of 5 rows and 5 columns and covered them with soft wool. He used to see them every day, waiting for them to hatch.
-</p>
-<p>
-One night a monkey entered through the window and crushed all the eggs. Ekalavya was very upset and cried praying for the eggs to be restored.
-Moved by his innocence, a fairy arrived and gave Ekalavya a magic wand. She said that he can touch each of crushed eggs and restore it back to original state. But, if he touches a good egg, then it gets crushed again.<br />
-The fairy warned Ekalavya that the magic wand is very powerful. When he touches a smashed egg or good egg, the other eggs adjacent(in longitude and latitude, not in diagonal) will turn into opposite state. That is, if the egg is smashed then it will be restored or if the egg is in good state then it gets smashed).
-</p>
-<p>
-Then the fairy said that Ekalavya can choose which eggs to restore. But he cannot remove the eggs from the tray until they hatch, else they get destroyed.
-</p>
-<p>
-Our little boy Ekalavya wants all the 25 eggs to be restored back.
-</p>
-<p>
+<body>
+	
+	<!-- Header-->
+	<header>
+		<!--<h1><img class="portrait" src="img/portrait.jpg"></h1>-->
+		<h1>ROHIT R NATH</h1>
+		<p>Embedded | IOT | Edge AI/ML/DL | V2X Engineer | Algorithms | Maker | Freelancer</p>
+	</header>
+	
+	<div class="container">
+		
+		<!-- Introduction-->
+		<section class="center">
+			<h1>Hi!</h1>
+			<p>
+				I'm a technology enthusiast & hobbyist, passionate about learning new technologies and work productively to make This World A Better Place.
+			</p>
+			<p>Domains: Embedded, IoT, V2X/C-V2X, Artificial Intelligece(AI/ML/DL), HMI Development.</p>
+		</section>
+		
+		<hr>
+		
+		<!-- Gallery Block-->
+		<section class="gallery">
+			<h1 class="center">Embedded Projects</h1>
+			<div class="row">
+				<div class="grid-2">
+				<a href="https://github.com/rohitrnath/Autopilot-System"><img src="img/autopilot.png">
+				<p>Autopilot Car</p>
+				</a>
+				</div>
+				<div class="grid-2">
+				<a href="https://github.com/rohitrnath/CNC-Plotter"><img src="img/CNCPlotter.png">
+				<p>CNC Plotter</p>
+				</a>
+				</div>
+				<div class="grid-2">
+				<a href="https://github.com/rohitrnath/VOGO_Helmet_Chor"><img src="img/VOGO.png">
+				<p>Helmet Safety Lock (VOGO Hackathon)</p>
+				</a>
+				</div>
+			</div>
+				<div class="row">
+				<div class="grid-2">
+				<a href="https://github.com/rohitrnath/Two-Channel-Valve-Controller"><img src="img/uiWidget.png">
+				<p>Touch Screen Based Valve Controller</p>
+				</a>
+				</div>
+				<div class="grid-2">
+				<a href="https://drive.google.com/file/d/1ubeMEtvQoRjx0xnu_IhWaz6hzLwM34IT/view?usp=sharing"><img src="img/soundRecorder.png">
+				<p>Sound Recorder And Playback without Microcontroller</p>
+				</a>
+				</div>
+				<div class="grid-2">
+				<a href="ekalavya.html"><img src="img/ekalavya.gif">
+				<p>Wit-Hustle Hackathon Problem statement</p>
+				</a>
+				</div>
+			</div>
+			<h1 class="center">AI Projects</h1>
+			<div class="row">
+				<div class="grid-2">
+				<a href="https://github.com/rohitrnath/Monocular-Depth-Estimation-and-Segmentation"><img src="img/summary.png">
+				<p>Simultaneous Monocular Depth Estimation And Segmentation</p>
+				</a>
+				</div>
+				<div class="grid-2">
+				<a href="https://github.com/rohitrnath/Facial-Expression-Detection"><img src="img/facial.gif">
+				<p>Facial Expression Recognition</p>
+				</a>
+				</div>
+				<div class="grid-2">
+				<a href="https://github.com/rohitrnath/Image-Super-Resolution-Using-Autoencoders"><img src="img/superresolution.jpg">
+				<p>Image Super Resolution Using Autoencoders</p>
+				</a>
+				</div>
+			</div>
+		</section>
+		
+		<hr>
+		
+		<!-- Testimonials-->	
+		<section class="testimonial">
+			<h1 class="center">Portfolio</h1>
+			<div class="row">
 
-<b>Dear Techie,<br />
- 
-Write a C program to implement an algorithm to provide Ekalavya a sequence for restoring all 25 Eggs.<br />
- 
-*No hardcoding, Algorithm only.</b>: 
+				<div class="grid-2">
+					<img src="img/fis.gif">
+					<h2>Fabric defect inspection system</h2>
+					<p>2017</p>
+					<p>This embedded prototyping I did for TVSAC, Bangalore. Developed a fabrication defect inspection system for Raymond using color sensors and CNC kind mechanism. All the firmware part is writtern in C++.</p>
+				</div>
 
-</p>
-<br />
-<h2>Demo:</h2>
-<p>
-Choose tray size: <button onclick="javascript:resizeBoard(2);">2x2</button> or <button onclick="javascript:resizeBoard(3);">3x3</button> or <button onclick="javascript:resizeBoard(4);">4x4</button>or <button onclick="javascript:resizeBoard(5);">5x5</button>
-</p>
-Time: <span id="timer"></span><br />
-Movements: <span id="counter"></span><br />
-<span id="square" class="board" style="width: 100%; height: 100%;"></span><br />
+				<div class="grid-2">
+					<img src="img/smartEnergyMeter.jpg">
+					<h2>Smart energy meter</h2>
+					<p>2018</p>
+					<p>This work I did for Skylark(Chennai), which is a networking company. Developed a prototype of smart energy meter which can be attach to current analog energy meter. It measure the electricity used in KWH and periodically send that information to AWS cloud</p>
+				</div>
 
+				
+			</div>
+		</section>
+		<section class="testimonial">
+			<div class="row">
+				<div class="grid-2">
+					<img src="img/ch.gif">
+					<h2>CARLA HIL setup for V2X</h2>
+					<p>2020</p>
+					<p>Introduced Carla(autonomous vehicle simulation platform) based application testing setup for V2X technology. Here I used python to take all physical data of vehicles from the CARLA environment and to converted it into V2X message format and send it to V2X device.</p>
+				</div>
 
-</section>
+				<div class="grid-2">
+					<img src="img/chmi.gif">
+					<h2>V2X HMI Web-App</h2>
+					<p>2019</p>
+					<p>This is a platform independent HMI hosted by embedded webserver from the device. HMI gateway is there to handle all the messages to HMI</p>
+				</div>
+		
+				<div class="grid-2">
+					<img src="img/DAGreen.png">
+					<h2>Domestic automated green house</h2>
+					<p>2015</p>
+					<p>Each plant has its own optimum condition for its growth, this project aimed to keep
+					optimum condition by automating atmospheric parameters such as temperature,
+					humidity, soil moisture level etc. and keeping the plant within optimum condition for
+					better yield. This was done as a part of TEXAS INSTRUMENT DESIGN INDIA CHALLENGE
+					2015.
+					</p>
+				</div>
+			</div>
+		</section>
+	</div> <!-- End container-->
+	
+	<!-- Spotlight -->
+	<section class="spotlight">
+	</section>
+	
+	
+	<!-- New container-->
+	<div class="container">
+	
+		<section class="education">	
+			<h2>B.Tech in Electronics anc Communication Engineering from Cochin University Of Science And Technology(CUSAT).</h2>
+		</section>
+		
+		<hr>
+			
+		<!--Experience Tables-->
+		<section class="experience">
+			<div class="row">
+				<div class="grid-2">
+					<h2>Danlaw Inc</h2>
+					<p>Dec. 2018 - present</p>
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Embedded engineer in connected vehicle(V2X) technology</li>
+						<li>V2X safety application development</li>
+						<li>Lead V2X HMI development</li>
+						<li>C-V2X stack design development(standards includes DSRC, WAVE, SAEj2735, UBX, NMEA, CAN)</li>
+						<li>Received Danlaw Rising star Award 2019.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="grid-2">
+					<h2>Aproxy Developers</h2>
+					<p>Sept. 2012 - Nov. 2013</p>
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Co-founder</li>
+						<li>IoT and Robotics training.</li>
+						<li>Sales of various electronic devices and components.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="grid-2">
+					<h2>College Of Engineering, Chengannur</h2>
+					<p>Jan. 2018 - April 2018</p>
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Resource Person at Fablab</li>
+						<li>Conducted training programs on IOT, embedded systems, PCB design and project design.</li>
+						<li>Project Mentor for Diploma, Btech and Mtech students for their academic projects.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<hr>
+		
+		<section>
+			<!--List of skills-->
+			<div class="row">
+				<div class="grid-2">
+					<h1>Skills</h1>
+					<ul>
+						<li>C/C++</li>
+						<li>Python</li>
+						<li>Matlab</li>
+						<li>Javascript(Nodejs, IoTjs)</li>
+						<li>Linux(posix)</li>
+						<li>Yocto, Buildroot</li>
+						<li>Pytorch, Tensorflow, Keras</li>
+						<li>TinyML,TF Lite, ML5</li>
+						<li> GDB, Valgrind, Rapita, G-Test</li>
+						<li>Git</li>
+					</ul>
+				</div>
+				
+				<div class="grid-4">
+					<h1>In Conclusion</h1>
+					<p>I'm an embedded system expert, worked in various disciplines of technology.<br>Some techy stuff which I am well into :
+						<li>Write code, implement algorithms</li>
+						<li>Open Hardware Developer( Arduino , RaspberryPi, BBB )</li>
+						<li>Interested in Edge AI models</li>
+						<li> Frequent participant in various hackathons and tech events</li>
+						<li>Innovator in Light Speed</li>
+						<!--<li>Quick prototyping of any ideas into reality</li>-->
+						<li>Best fit for Researh oriented projects</li>
+					<p>
+						<br>Some of my project are open in <a href="https://github.com/rohitrnath">github</a>. I'm open to your feedback and suggestions. If you have anything to discuss, Shoot me an
+						<a href="mailto:rohitpathanamthitta@gmail.com?Subject=Connect%20With%20Rohit" target="_top">email</a>!<br>
+						connect with me on <a href="https://www.linkedin.com/in/rohitrnath/">linkedin</a>!<br>
+						Also you can hire me in <a href="https://www.freelancer.com/u/rohitcochin">freelancer</a> or <a href="https://www.upwork.com/o/profiles/users/~018620dd1cc8ab327e/">upwork</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		<!--Footer-->
+		<footer class="center">
+			<hr>
+			<span>&copy; Rohit R NATH 2020</span>
+		</footer>
+		
+	</div><!-- End Container -->
+	
 </body>
 </html>

@@ -1,0 +1,47 @@
+header
+{
+    position:absolute;
+    margin-top:0px;
+    margin-left:0px;
+    width:800px;
+}
+section
+{
+    position:absolute;
+    margin-top:120px;
+    margin-left:0px;
+
+}
+aside
+{
+    position:absolute;
+    margin-top:75px;
+    margin-left:600px;
+    width:175px;
+}
+footer
+{
+    position:absolute;
+    margin-top:1450px;
+    margin-left:0px;
+    width:800px;
+    height:50px;
+}
+img
+{
+    border-color:Navy;
+    border-spacing:0px;
+    border-style:solid;
+    border-width:thin;
+    cursor:pointer;
+}
+button
+{
+    width:75px;
+    cursor:pointer;
+}
+img.sample
+{
+    border-width:0;
+    cursor:default;
+}

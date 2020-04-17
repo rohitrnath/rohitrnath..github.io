@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>WitBrew | Crafting Coherence</title>
+<meta name="author" content="Rohit R Nath" />
+<meta charset="UTF-8" />
+<link rel="Stylesheet" type="text/css" href="EK_style.css" />
+<script src="EK_logic.js"></script>
+</head>
+ <style type = "text/css">
+  body {
+  background-image: url("EK_images/BG.png");
+  }
+  p {
+  background-color: black;
+  background-color: rgba(255, 255, 255, .85);
+  }
+ </style>
+
+<body onload="resizeBoard(5);">
+<section>
+<h1>Ekalavya and the Turtle Eggs</h1>
+<p>
+<b>story</b>: A small boy called Ekalavya lived by the lake side.  On his birthday, his grandfather gave him 25 turtle eggs as gift and tells him to take care of them, until they hatch.<br />
+Ekalavya placed all the 25 eggs in an egg tray of 5 rows and 5 columns and covered them with soft wool. He used to see them every day, waiting for them to hatch.
+</p>
+<p>
+One night a monkey entered through the window and crushed all the eggs. Ekalavya was very upset and cried praying for the eggs to be restored.
+Moved by his innocence, a fairy arrived and gave Ekalavya a magic wand. She said that he can touch each of crushed eggs and restore it back to original state. But, if he touches a good egg, then it gets crushed again.<br />
+The fairy warned Ekalavya that the magic wand is very powerful. When he touches a smashed egg or good egg, the other eggs adjacent(in longitude and latitude, not in diagonal) will turn into opposite state. That is, if the egg is smashed then it will be restored or if the egg is in good state then it gets smashed).
+</p>
+<p>
+Then the fairy said that Ekalavya can choose which eggs to restore. But he cannot remove the eggs from the tray until they hatch, else they get destroyed.
+</p>
+<p>
+Our little boy Ekalavya wants all the 25 eggs to be restored back.
+</p>
+<p>
+
+<b>Dear Techie,<br />
+ 
+Write a C program to implement an algorithm to provide Ekalavya a sequence for restoring all 25 Eggs.<br />
+ 
+*No hardcoding, Algorithm only.</b>: 
+
+</p>
+<br />
+<h2>Demo:</h2>
+<p>
+Choose tray size: <button onclick="javascript:resizeBoard(2);">2x2</button> or <button onclick="javascript:resizeBoard(3);">3x3</button> or <button onclick="javascript:resizeBoard(4);">4x4</button>or <button onclick="javascript:resizeBoard(5);">5x5</button>
+</p>
+Time: <span id="timer"></span><br />
+Movements: <span id="counter"></span><br />
+<span id="square" class="board" style="width: 100%; height: 100%;"></span><br />
+
+
+</section>
+</body>
+</html>
